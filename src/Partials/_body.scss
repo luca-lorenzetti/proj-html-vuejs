@@ -4,6 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
+body:not( p.description){
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
