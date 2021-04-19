@@ -1,11 +1,92 @@
-header{
-    background-image: url("../src/img/slider52x.jpg");
-    background-position: right;
+header {
 
     width: $widthHeader;
     height: $heightHeader;
+
+    // Top header
+    &>.top_header {
+        position: absolute;
+        height: 15vh;
+        width: 100%;
+        align-items: center;
+
+        // Logo
+
+        & img {
+            width: $withLogoHeader;
+        }
+
+        // Navbar menu header
+        & .nav_bar_menu_header {
+
+            position: relative;
+            z-index: 3;
+
+            &>li {
+                margin: 0 20px;
+            }
+
+            & a {
+                color: #bcbcbc;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    &>.left_header {
+        background-color: #030303;
+        height: $heightRightHeader;
+        padding: 0 60px 0 90px;
+        width: 45%;
+        align-items: center;
+        color: #fff;
+
+
+
+
+        & h2 {
+            font-size: 60px;
+            overflow-wrap: break-word;
+        }
+
+        &>.left_inside_left_header {
+            border-bottom: 1px solid $secondaryColorText;
+            width: 60px;
+            margin-top: -400px;
+        }
+
+        &>.right_inside_left_header {
+
+            &>* {
+                margin: 30px;
+            }
+
+            &>*:not(button) {
+                width: 500px;
+
+            }
+
+            &>p:nth-child(3) {
+                overflow-wrap: break-word;
+                color: $secondaryColorText;
+                font-family: Helvetica Neue;
+                letter-spacing: 3px;
+                line-height: 30px;
+            }
+
+        }
+    }
+
+    &>.right_header {
+        background-image: url("../src/img/slider52x.jpg");
+        height: $heightRightHeader;
+        box-shadow: inset 0 40px 100px 0px rgba(0, 0, 0, 1);
+        flex: 1;
+    }
+
 }
 
-.top_header{
-    position: absolute;
+
+.active_menu_item {
+    color: #fff;
 }

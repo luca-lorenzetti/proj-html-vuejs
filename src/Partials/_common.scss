@@ -1,8 +1,41 @@
 .bgImg-full-cover{
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .flex{
     display: flex;
+    justify-content: space-around;
+}
+.flex_colum{
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+
+    & a{
+        text-decoration: none;
+    }
+}
+
+
+// Fonts size
+
+@for $i from 1 through 19 {
+    .font-size-#{ ($i * 2) +10} {
+      font-size: ($i * 2) +10px;
+    }
+  }
+
+.text_uppercase{
+    text-transform: uppercase;
+}  
+.text_light{
+    font-weight: 100;
+}
+
+
+strong{
+    text-transform: uppercase;
 }
