@@ -19,7 +19,9 @@ ul{
     }
 }
 
-
+h2{
+    text-transform: uppercase;
+}
 // Fonts size
 
 @for $i from 1 through 19 {
