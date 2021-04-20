@@ -149,25 +149,26 @@
                     <!-- /First section -->
              
                     <!-- Second section -->
-                    <div class="second_section flex">
+                    <div class="second_section flex" >
 
-                        <!-- Left -->
-                        <div class="left_second_section bgImg-full-cover">                           
-                        </div>
-                      
-        
-                        <!-- Right  -->
-                        <div class="right_second_section flex flex_colum">
+                        <div class="inter_sec_section flex" >
 
-                                <p class="flex"> <span></span><small class="font-size-14 text_light text_uppercase">fine dining experience</small></p>
-                                <div class="title_header_left">
-                                    <h2>the best table in town</h2>
-                                </div>
-                                <p class="font-size-20 text_light description">Pellentesque vitae viverra risus, sagittis.
-                                    Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
-                                </p>
-                                <button>explore the menu</button>
-                            
+                            <!-- Left -->
+                            <div class="left_inter_sec_section bgImg-full-cover " :style="{ backgroundImage: 'url(' + interSection[0].pathBg + ')' }">                           
+                            </div>
+            
+                            <!-- Right  -->
+                            <div class="right_inter_sec_section flex flex_colum">
+    
+                                    <p class="flex"> <span></span><small class="font-size-14 text_light text_uppercase">{{interSection[0].subTitle}}</small></p>
+                                    <div class="title_header_left">
+                                        <h2>{{interSection[0].title}}</h2>
+                                    </div>
+                                    <p class="font-size-20 text_light description">{{interSection[0].content}}
+                                    </p>
+                                    <button><i v-if="interSection[0].iconButton" :class="interSection[0].iconPath"></i> {{interSection[0].textButton}}</button>
+                                
+                            </div>
                         </div>
                     </div>
                     <!-- /Second section -->
@@ -283,8 +284,47 @@
                                 <h2 class="font-size-30">Last News & promotions</h2>
                                 <hr>
                             </div>
+
+                            <!-- Cards -->
+                            <div class="cards flex">
+                                <div v-for="article in news" class="card flex flex_colum">
+                                    <div class="bg_article flex flex_colum" :style="{ backgroundImage: 'url(' + article.pathBg + ')' }">
+                                        <i class="fas fa-link"></i>
+                                        <h3> {{article.title}} </h3>
+                                        <p><small>{{article.category}}</small></p>
+                                    </div>
+                                    <h3> {{article.title}} </h3>
+                                    <p class="font-size-12">By {{article.author}} | {{article.date}} | Categories: {{article.category}}</p>
+                                </div>
+                            </div>
+                          
                         </div>
                     <!-- /News section -->
+
+
+                    <!-- Takeout section -->
+                    <div class="takeout_section">
+                        <div class="inter_sec_section flex" >
+
+                            <!-- Left -->
+                            <div class="left_inter_sec_section bgImg-full-cover " :style="{ backgroundImage: 'url(' + interSection[1].pathBg + ')' }">                           
+                            </div>
+            
+                            <!-- Right  -->
+                            <div class="right_inter_sec_section flex flex_colum">
+    
+                                    <p class="flex"> <span></span><small class="font-size-14 text_light text_uppercase">{{interSection[1].subTitle}}</small></p>
+                                    <div class="title_header_left">
+                                        <h2>{{interSection[1].title}}</h2>
+                                    </div>
+                                    <p class="font-size-20 text_light description">{{interSection[1].content}}
+                                    </p>
+                                    <button><i v-if="interSection[1].iconButton" :class="interSection[1].iconPath"></i> {{interSection[1].textButton}}</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Takeout section -->
 
             </main>
             <!-- M/ain -->
