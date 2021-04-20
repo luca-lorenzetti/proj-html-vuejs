@@ -15,6 +15,7 @@
 
     & > .right_inter_sec_section{
         padding: 100px;
+        padding-right: 150px;
         flex: 1;
         background-color: #000;
         align-items: flex-start;
@@ -24,9 +25,10 @@
         }
 
         & > p:nth-child(1){
+
+            align-items: center;
             & > span{
                 margin-right: 75px;
-                height: 10px;
                 width: 60px;
                 border-bottom: 1px solid #fff;
             }

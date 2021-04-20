@@ -100,12 +100,95 @@
           },
           {
             pathBg: "src/img/slider72x-scaled.jpg",
-            title: "the best table in town",
+            title: "takeout now avaible",
             subTitle: "enjoy your meal at home",
             content: "Pellentesque vitae viverra risus, sagittis.Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
             iconButton: true,
             iconPath: "fas fa-car",
             textButton: "view take out menu"
+          }
+        ],
+        menus:[
+          {
+            name: "hors d'oeuvres",
+            pathBg: "",
+            dishs:[
+              {
+                name: "ahi salmon nigiri",
+                description: "Eget vulputate vitae quid rutrum blandit sed. Quam nulla sit lacinia.",
+                price: 48
+              },
+              {
+                name: "umi masu salad",
+                description: "Mollis ornare si sapient, sodales: Cursus duis proin sempre quisque.",
+                price: 21
+              },
+              {
+                name: "temaki with crab",
+                description: "Ac vel ornare senectus placerat duis amet dictumst tellus.",
+                price: 32
+              },
+              {
+                name: "california rolls",
+                description: "Ac vel, risum oenaRE senectus placerat duis ame dictumst tellus.",
+                price: 22
+              }
+            ],
+            main: false
+          },
+          {
+            name: "main course",
+            pathBg: "src/img/slider32x.jpg",
+            dishs:[
+              {
+                name: "braised abalone",
+                description: "Eget vulputate vitae quid rutrum blandit sed. Quam nulla sit lacinia.",
+                price: 52
+              },
+              {
+                name: "twice cooked pork",
+                description: "Mollis ornare si sapient, sodales: Cursus duis proin sempre quisque.",
+                price: 21
+              },
+              {
+                name: "kung pao chicken",
+                description: "Ac vel ornare senectus placerat duis amet dictumst tellus.",
+                price: 32
+              },
+              {
+                name: "char siu & sushi",
+                description: "Ac vel, risum oenaRE senectus placerat duis ame dictumst tellus.",
+                price: 48
+              }
+            ],
+            main: true
+          },
+          {
+            name: "desert",
+            pathBg: "",
+            dishs:[
+              {
+                name: "chocolate ball cake",
+                description: "Eget vulputate vitae quid rutrum blandit sed. Quam nulla sit lacinia.",
+                price: 13
+              },
+              {
+                name: "lamie pie with crust",
+                description: "Mollis ornare si sapient, sodales: Cursus duis proin sempre quisque.",
+                price: 14
+              },
+              {
+                name: "raspberry pear cake",
+                description: "Ac vel ornare senectus placerat duis amet dictumst tellus.",
+                price: 18
+              },
+              {
+                name: "caffe' au lait",
+                description: "Ac vel, risum oenaRE senectus placerat duis ame dictumst tellus.",
+                price: 6
+              }
+            ],
+            main: false
           }
         ]
     },

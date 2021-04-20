@@ -326,6 +326,24 @@
                     </div>
                     <!-- /Takeout section -->
 
+                    <!-- Menus section -->
+
+                    <div class="menus_section flex">
+
+                        <div v-for="menu in menus" class="menu flex flex_colum" :class="{'main_menu': menu.main}"  :style="{ backgroundImage: 'url(' + menu.pathBg + ')' }">
+                            <h3  class="text_bold text_uppercase">{{menu.name}}</h3>
+
+                            <div v-for="dish in menu.dishs" class="dish">
+                                <div class="name_menu flex">
+                                    <h4 class="text_bold text_uppercase">{{dish.name}} </h4> <small class="text_bold"> &dollar;{{dish.price}}</small>
+                                </div>
+                                <p>{{dish.description}}</p>
+                            </div>
+                     
+                        </div>
+                    </div>
+                    <!-- /Menus section -->
+
             </main>
             <!-- M/ain -->
 

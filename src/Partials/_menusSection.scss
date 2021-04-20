@@ -1,0 +1,51 @@
+.menus_section{
+    margin-top: 150px;
+    justify-content: center;
+    padding: 50px 150px;
+    margin: 100px auto;
+    width : $widthMenusSec;
+
+    & > .menu{
+        background-color: $gbSecMenu;
+        padding: 50px;
+
+        & > *{
+            margin: 40px 30px;
+            
+        }
+        
+        & > .dish > p{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 10px 0;
+
+        }
+        & .name_menu{
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 30px;
+            margin: 10px 0;
+        }
+    }
+
+    & > .main_menu{
+        box-shadow: inset 200px 0 1000px -4px rgba(0, 0, 0, 0.8), 
+                    inset -12px 0 500px -4px rgba(0, 0, 0, 0.8),
+                    inset 0px 500px 1000px -10px rgba(0,0,0,1);
+
+        background-position: center;
+        background-size: cover;
+        color: $textMainMenu;
+        transform: translateY(-50px);
+        background-color: $bgMainMenu;
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        -o-transform: translateY(-50px);
+
+        & p{
+            color: #bcbcbc;
+        }
+    }
+
+
+}

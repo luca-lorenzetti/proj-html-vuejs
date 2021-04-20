@@ -126,6 +126,10 @@ h2 {
   font-weight: 100;
 }
 
+.text_bold {
+  font-weight: bold;
+}
+
 strong {
   text-transform: uppercase;
 }
@@ -421,6 +425,7 @@ header > .right_header {
 }
 .inter_sec_section > .right_inter_sec_section {
   padding: 100px;
+  padding-right: 150px;
   flex: 1;
   background-color: #000;
   align-items: flex-start;
@@ -428,9 +433,11 @@ header > .right_header {
 .inter_sec_section > .right_inter_sec_section > *:not(p:nth-child(1)) {
   margin-left: 130px;
 }
+.inter_sec_section > .right_inter_sec_section > p:nth-child(1) {
+  align-items: center;
+}
 .inter_sec_section > .right_inter_sec_section > p:nth-child(1) > span {
   margin-right: 75px;
-  height: 10px;
   width: 60px;
   border-bottom: 1px solid #fff;
 }
@@ -447,6 +454,46 @@ header > .right_header {
 
 .takeout_section {
   margin-top: 100px;
+}
+
+.menus_section {
+  margin-top: 150px;
+  justify-content: center;
+  padding: 50px 150px;
+  margin: 100px auto;
+  width: 90%;
+}
+.menus_section > .menu {
+  background-color: #E8E8E8;
+  padding: 50px;
+}
+.menus_section > .menu > * {
+  margin: 40px 30px;
+}
+.menus_section > .menu > .dish > p {
+  font-family: "Times New Roman", Times, serif;
+  margin: 10px 0;
+}
+.menus_section > .menu .name_menu {
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  margin: 10px 0;
+}
+.menus_section > .main_menu {
+  box-shadow: inset 200px 0 1000px -4px rgba(0, 0, 0, 0.8), inset -12px 0 500px -4px rgba(0, 0, 0, 0.8), inset 0px 500px 1000px -10px black;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  transform: translateY(-50px);
+  background-color: #000;
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+}
+.menus_section > .main_menu p {
+  color: #bcbcbc;
 }
 
 button {
