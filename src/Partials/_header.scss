@@ -24,8 +24,13 @@ header {
 
             &>li {
                 margin: 0 20px;
+
+                & > a.active_menu_item {
+                    color: #fff;
+                }
             }
 
+           
             & a {
                 color: #bcbcbc;
                 text-transform: capitalize;
@@ -87,6 +92,4 @@ header {
 }
 
 
-.active_menu_item {
-    color: #fff;
-}
+

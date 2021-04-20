@@ -6,9 +6,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Libre+Baskerville:ital@1&family=Petit+Formal+Script&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
         <!-- Font Roboto tmp -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- VueJs -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 
         <!-- Font-awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -40,14 +48,7 @@
                     <div class="right_top_header">
 
                         <ul class="nav_bar_menu_header flex">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">culinary history</a></li>
-                            <li><a href="#">our team</a></li>
-                            <li><a href="#">our menu</a></li>
-                            <li><a href="#">takeout</a></li>
-                            <li><a href="#">bulletin</a></li>
-                            <li><a href="#">reservations</a></li>
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li v-for="item in navbar" ><a href="#" @click="removeActiveFromMenuHeader(),item.active = !item.active" :class="{'active_menu_item' : item.active}">{{item.nameItem}}<i v-if="item.icon" :class="item.pathIcon"></i> </a></li>
                         </ul>
 
                     </div>
@@ -175,24 +176,124 @@
                     <!-- Critics section -->
 
                         <div class="critics_section flex flex_colum">
-                            <h2>What critics are saying about us</h2>
-
-                            <div class="main_card">
-                                <div class="left_card">
+                            <div class="title_section">
+                                <h2 class="font-size-30">What critics are saying about us</h2>
+                                <hr>
+                            </div>
+                        
+                            <!-- Main card -->
+                            <div class="main_card card flex">
+                                <div class="left_card bgImg-full-cover">
 
                                 </div>
 
-                                <div class="right_card"></div>
+                                <div class="right_card flex flex_colum">
+                                    <div class="author">
+                                        <small> Author</small>
+                                    </div>
+                                 
+                                    <div class="newpaper font-size-20">
+                                        <h3 class="font-size-30">new york time</h3>
+                                    </div>
+                                    <div class="vote">
+                                        <i class="fas fa-star" v-for="i in 5"></i>
+                                    </div>
+                                    <div class="line">
+                                        <hr>
+                                    </div>
+                                    <div class="critic_content text_light">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, soluta quidem numquam totam repellat ex facere harum veniam et sed omnis quaerat asperiores, maxime, aliquam fugit? Beatae repellendus illo ipsam.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Anim libero asperiores laboriosam architecto ratione aliquam! Ipsum rerum nulla est?</p>
+                                    </div>
+                                    
+                                    <div>
+                                        <button class="font-size-12"> read full article</button>
+                                    </div>
+                                </div>
+                             
                             </div>
+
+
+                            <div class="secondary_cards  flex">
+
+                                
+                                <div class="card flex flex_colum bgImg-full-cover">
+                                    <div class="author">
+                                        <small> Author</small>
+                                    </div>
+                                 
+                                    <div class="newpaper font-size-20">
+                                        <h3 class="font-size-30">new york time</h3>
+                                    </div>
+                                    <div class="vote">
+                                        <i class="fas fa-star" v-for="i in 5"></i>
+                                    </div>
+                                    <div class="line">
+                                        <hr>
+                                    </div>
+                                    <div class="critic_content text_light">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Anim libero asperiores laboriosam architecto ratione aliquam! Ipsum rerum nulla est?</p>
+                                    </div>
+                                    
+                                    <div>
+                                        <button class="font-size-12"> read full article</button>
+                                    </div>
+                                </div>
+
+                                <div class="card flex flex_colum bgImg-full-cover">
+                                    <div class="author">
+                                        <small> Author</small>
+                                    </div>
+                                 
+                                    <div class="newpaper font-size-20">
+                                        <h3 class="font-size-30">new york time</h3>
+                                    </div>
+                                    <div class="vote">
+                                        <i class="fas fa-star" v-for="i in 5"></i>
+                                    </div>
+                                    <div class="line">
+                                        <hr>
+                                    </div>
+                                    <div class="critic_content text_light">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, soluta quidem numquam totam repellat ex facere harum veniam et sed omnis quaerat asperiores, maxime, aliquam fugit? Beatae repellendus illo ipsam.</p>
+                                    </div>
+                                    
+                                    <div>
+                                        <button class="font-size-12"> read full article</button>
+                                    </div>
+                                </div>
+                             
+                            </div>
+
+
                         </div>
 
                     <!-- /Critics section -->
+
+                    <!-- 4th section -->
+                    <div class="s4th_section flex bgImg-full-cover">
+                        <p class="font-size-16 text_uppercase">california rolls - $22</p>
+                    </div>
+                    <!-- 4th section -->
+
+
+                    <!-- News section -->
+                        <div class="news_section flex flex_colum">
+                            <div class="title_section">
+                                <h2 class="font-size-30">Last News & promotions</h2>
+                                <hr>
+                            </div>
+                        </div>
+                    <!-- /News section -->
 
             </main>
             <!-- M/ain -->
 
         </div>
         <!-- /Root -->
+
+    <script src="src/js/script.js"></script>
+
     </body>
 
 </html>
