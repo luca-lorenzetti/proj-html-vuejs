@@ -1,20 +1,20 @@
 .dish_day_section{
     background-image: url("../src/img/hero42x.jpg");
     background-position: center;
-    height: 70vh;
+    height: 80vh;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: flex-start;
- 
 
 
 
     & > .dish_card{
         background-color: #000;
         color: $textColorMain;
+        margin-top: 40px;
         margin-left: 15%;
         padding: 50px 70px;
-        height: 80%;
+        height: 75%;
         width: 20%;
 
         & > .dish_name{
@@ -36,6 +36,10 @@
 
         & > hr{
             width: 60px;
+        }
+        & > p{
+            font-family: Helvetica Neue;
+            letter-spacing: 3px;
         }
     }
 }

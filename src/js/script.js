@@ -191,6 +191,22 @@
             main: false
           }
         ],
+        socials:[
+          {
+            iconPath:"fab fa-facebook"
+          },
+          {
+            iconPath:"fab fa-twitter"
+          },
+          {
+            iconPath:"fab fa-youtube"
+          }, {
+            iconPath:"fab fa-instagram"
+          }
+          , {
+            iconPath:"fab fa-linkedin-in"
+          }
+        ],
 
         dishOfDay:{}
     },
