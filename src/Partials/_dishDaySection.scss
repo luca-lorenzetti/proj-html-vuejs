@@ -1,0 +1,41 @@
+.dish_day_section{
+    background-image: url("../src/img/hero42x.jpg");
+    background-position: center;
+    height: 70vh;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: flex-start;
+ 
+
+
+
+    & > .dish_card{
+        background-color: #000;
+        color: $textColorMain;
+        margin-left: 15%;
+        padding: 50px 70px;
+        height: 80%;
+        width: 20%;
+
+        & > .dish_name{
+            justify-content:space-between;
+            word-wrap: break-word;
+            
+            & > small{
+                margin-top: 10px;
+            }
+            &  h4{
+                width: 180px;
+                line-height: 45px;
+            }
+        }
+
+        & > *:not(button){
+            margin: 50px 0px;
+        }
+
+        & > hr{
+            width: 60px;
+        }
+    }
+}

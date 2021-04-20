@@ -496,6 +496,40 @@ header > .right_header {
   color: #bcbcbc;
 }
 
+.dish_day_section {
+  background-image: url("../src/img/hero42x.jpg");
+  background-position: center;
+  height: 70vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dish_day_section > .dish_card {
+  background-color: #000;
+  color: #fff;
+  margin-left: 15%;
+  padding: 50px 70px;
+  height: 80%;
+  width: 20%;
+}
+.dish_day_section > .dish_card > .dish_name {
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+.dish_day_section > .dish_card > .dish_name > small {
+  margin-top: 10px;
+}
+.dish_day_section > .dish_card > .dish_name h4 {
+  width: 180px;
+  line-height: 45px;
+}
+.dish_day_section > .dish_card > *:not(button) {
+  margin: 50px 0px;
+}
+.dish_day_section > .dish_card > hr {
+  width: 60px;
+}
+
 button {
   text-transform: uppercase;
   background-color: transparent;

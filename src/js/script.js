@@ -190,7 +190,9 @@
             ],
             main: false
           }
-        ]
+        ],
+
+        dishOfDay:{}
     },
     methods: {
 
@@ -200,7 +202,13 @@
               elem.active = false;
             }
           });
+        },
+        setDishOfDay(nMenu,nDish){
+          this.dishOfDay = this.menus[nMenu].dishs[nDish];
         }
     },
 
+    created(){
+      this.setDishOfDay(1,0);
+    }
   })
