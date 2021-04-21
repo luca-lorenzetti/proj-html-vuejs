@@ -241,6 +241,11 @@ header > .header_content > .right_inter_sec_section > p {
   color: #fff;
   text-transform: uppercase;
   align-items: flex-end;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 .first_section .right_first_section::after {
   content: "";
@@ -281,6 +286,11 @@ header > .header_content > .right_inter_sec_section > p {
   margin: 40px;
   height: 85vh;
   color: #fff;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .critics_section .card i {
   margin: 0 5px;
@@ -304,6 +314,11 @@ header > .header_content > .right_inter_sec_section > p {
   height: 100%;
 }
 .critics_section > .main_card > .right_card {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   flex-direction: column;
   background-color: #000;
   flex: 1;
@@ -341,6 +356,13 @@ header > .header_content > .right_inter_sec_section > p {
   background-position: center 30%;
   box-shadow: inset 0 200px 300px 80px black;
   flex: 1;
+}
+.critics_section > .secondary_cards > *:hover {
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
 }
 .critics_section > .secondary_cards > *:nth-child(1) {
   background-image: url("../src/img/info52x.jpg");
@@ -382,6 +404,11 @@ header > .header_content > .right_inter_sec_section > p {
   margin: 15px 0;
 }
 .news_section .card > .bg_article {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
   height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -506,7 +533,7 @@ header > .header_content > .right_inter_sec_section > p {
   margin-left: 15%;
   padding: 50px 70px;
   height: 75%;
-  width: 20%;
+  width: 25%;
 }
 .dish_day_section > .dish_card > .dish_name {
   justify-content: space-between;
@@ -531,10 +558,9 @@ header > .header_content > .right_inter_sec_section > p {
 }
 
 footer {
-  background-image: url("../src/img/slider52x.jpg");
-  background-position: 100% 70%;
+  background-image: url("../src/img/footer2x.jpg");
+  background-position: 0% 120%;
   background-repeat: no-repeat;
-  box-shadow: inset 0 200px 400px 80px black;
   height: 70vh;
   position: relative;
   color: #fff;
@@ -584,19 +610,6 @@ footer .copyright {
   position: absolute;
   z-index: 10;
   bottom: 0;
-}
-
-footer::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
 }
 
 button {
