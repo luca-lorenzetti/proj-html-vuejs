@@ -1,6 +1,8 @@
+
   var app = new Vue({
     el: '#root',
     data: {
+
         header:{
             title: "fine dinning experience",
             subtitle: "the best table in town",

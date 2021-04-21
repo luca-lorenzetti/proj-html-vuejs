@@ -22,3 +22,7 @@
 @import "Partials/dishDaySection";
 @import "Partials/footer";
 @import "Partials/button";
+
+html{
+    scroll-behavior: smooth;
+}

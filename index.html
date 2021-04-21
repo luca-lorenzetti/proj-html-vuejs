@@ -48,7 +48,12 @@
                     <div class="right_top_header">
 
                         <ul class="nav_bar_menu_header flex">
-                            <li v-for="item in navbar" ><a href="#" @click="removeActiveFromMenuHeader(),item.active = !item.active" :class="{'active_menu_item' : item.active}">{{item.nameItem}}<i v-if="item.icon" :class="item.pathIcon"></i> </a></li>
+                            <li v-for="item in navbar" >
+                                    <a :href="'#' + item.nameItem" v-smooth-scroll @click="removeActiveFromMenuHeader(),item.active = !item.active" :class="{'active_menu_item' : item.active}">{{item.nameItem}}
+                                    <small class="new text_bold font-size-12" v-show="item.new">New</small>
+                                    <i v-if="item.icon" :class="item.pathIcon"></i> 
+                            
+                            </a></li>
                         </ul>
 
                     </div>
@@ -174,7 +179,7 @@
 
                     <!-- Critics section -->
 
-                        <div class="critics_section flex flex_colum">
+                        <div id="critics" class="critics_section flex flex_colum">
                             <div class="title_section">
                                 <h2 class="font-size-30">What critics are saying about us</h2>
                                 <hr>
@@ -250,7 +255,7 @@
 
 
                     <!-- News section -->
-                        <div class="news_section flex flex_colum">
+                        <div id="news" class="news_section flex flex_colum">
                             <div class="title_section">
                                 <h2 class="font-size-30">Last News & promotions</h2>
                                 <hr>
@@ -274,7 +279,7 @@
 
 
                     <!-- Takeout section -->
-                    <div class="takeout_section">
+                    <div id="takeout" class="takeout_section">
                         <div class="inter_sec_section flex" >
 
                             <!-- Left -->
@@ -299,7 +304,7 @@
 
                     <!-- Menus section -->
 
-                    <div class="menus_section flex">
+                    <div id="our menu" class="menus_section flex">
 
                         <div v-for="menu in menus" class="menu flex flex_colum" :class="{'main_menu': menu.main}"  :style="{ backgroundImage: 'url(' + menu.pathBg + ')' }">
                             <h3  class="text_bold text_uppercase">{{menu.name}}</h3>
