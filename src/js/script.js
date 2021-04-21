@@ -207,7 +207,24 @@
             iconPath:"fab fa-linkedin-in"
           }
         ],
-
+        critics:[
+          {
+            author: "meggy stewart",
+            newspaper: "new york times",
+            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, soluta quidem numquam totam repellat ex facere harum veniam et sed omnis quaerat asperiores, maxime, aliquam fugit? Beatae repellendus illo ipsam.\n\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Anim libero asperiores laboriosam architecto ratione aliquam! Ipsum rerum nulla est?",
+            vote: 5
+          },      {
+            author: "mary maxey",
+            newspaper: "the guardian",
+            content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Anim libero asperiores laboriosam architecto ratione aliquam! Ipsum rerum nulla est?",
+            vote: 5
+          },      {
+            author: "patrick monroe",
+            newspaper: "globe and mail",
+            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, soluta quidem numquam totam repellat ex facere harum veniam et sed omnis quaerat asperiores, maxime, aliquam fugit? Beatae repellendus illo ipsam.",
+            vote: 5
+          }
+        ],
         dishOfDay:{}
     },
     methods: {

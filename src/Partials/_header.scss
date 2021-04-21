@@ -39,7 +39,7 @@ header {
     }
 
     &>.left_header {
-        background-color: #030303;
+        background-color: $mainBgColor;
         height: $heightRightHeader;
         padding: 0 60px 0 90px;
         width: 45%;

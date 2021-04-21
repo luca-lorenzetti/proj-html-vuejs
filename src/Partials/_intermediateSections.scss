@@ -17,7 +17,7 @@
         padding: 100px;
         padding-right: 150px;
         flex: 1;
-        background-color: #000;
+        background-color: $mainBgColor;
         align-items: flex-start;
 
         & > *:not(p:nth-child(1)){
