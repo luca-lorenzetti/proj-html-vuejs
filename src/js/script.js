@@ -1,7 +1,13 @@
   var app = new Vue({
     el: '#root',
     data: {
-
+        header:{
+            title: "fine dinning experience",
+            subtitle: "the best table in town",
+            content: "Pellentsque vitae viverra risus, sagittis.Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+            textButton: "explore the menu"
+          }
+        ,
         navbar:[
           {
             nameItem: "home",

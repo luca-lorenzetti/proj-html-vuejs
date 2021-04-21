@@ -7,7 +7,7 @@
      .card{
         margin: 40px;
         height: 85vh;
-        color: #fff;
+        color: $textColorMain;
       
          i{
             margin: 0 5px;
@@ -73,7 +73,6 @@
             -o-transform: scale(1.04);
             }
     }
-
 
      > .secondary_cards {
         margin-top: 0;

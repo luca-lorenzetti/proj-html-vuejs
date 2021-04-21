@@ -1,5 +1,5 @@
 .inter_sec_section{
-    color:  #fff;
+    color:  $textColorMain;
     flex: 1;
 
     & > *{
@@ -35,7 +35,7 @@
         }
         & > p:nth-child(3){
             overflow-wrap: break-word;
-                color: $secondaryColorText;
+                color: $textColorThird;
                 font-family: Helvetica Neue;
                 letter-spacing: 3px;
                 line-height: 30px;

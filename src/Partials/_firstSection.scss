@@ -2,7 +2,7 @@
     flex-wrap: wrap;
     padding: 15px;
     width: $widthFirstSection;
-    margin: 0 auto;
+    margin: 50px auto;
 
     &>div {
         margin: 60px;
@@ -37,7 +37,7 @@
         background-image: url("../src/img/info22x.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        color: #fff;
+        color: $textColorMain;
         text-transform: uppercase;
         align-items: flex-end;
     }

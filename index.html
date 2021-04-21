@@ -9,7 +9,7 @@
 
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Libre+Baskerville:ital@1&family=Petit+Formal+Script&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Libre+Baskerville:ital@1&family=Petit+Formal+Script&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 
         <!-- Font Roboto tmp -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -57,28 +57,26 @@
                 </div>
                 <!-- /Top Header -->
 
-                <!-- Left header -->
-                <div class="left_header flex">
-                    <div class="left_inside_left_header"></div>
-                    <div class="right_inside_left_header">
-                        <p><small class="font-size-14 text_light text_uppercase">the best table in town</small></p>
-                        <div class="title_header_left">
-                            <h2>fine dinning experience</h2>
-                        </div>
-                        <p class="font-size-20">Pellentesque vitae viverra risus, sagittis.
-                            Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
-                        </p>
-                        <button>explore the menu</button>
+
+                <div class="inter_sec_section flex header_content" >
+
+                    <!-- Left -->
+                    <div class="left_inter_sec_section bgImg-full-cover ">                           
                     </div>
-                   
-                </div>
-                <!-- /Left header -->
+    
+                    <!-- Right  -->
+                    <div class="right_inter_sec_section flex flex_colum">
 
-                <!-- Right header -->
-                <div class="right_header bgImg-full-cover">
-
+                            <p class="flex"> <span></span><small class="font-size-14 text_light text_uppercase">{{header.subtitle}}</small></p>
+                            <div class="title_header_left">
+                                <h2>{{header.title}}</h2>
+                            </div>
+                            <p class="font-size-20 text_light description">{{header.content}}
+                            </p>
+                            <button>{{header.textButton}}</button>
+                        
+                    </div>
                 </div>
-                <!-- /Right header -->
 
             </header>
 
@@ -194,7 +192,7 @@
                                     </div>
                                  
                                     <div class="newpaper font-size-20">
-                                        <h3 class="font-size-30">{{critics[0].newpaper}}</h3>
+                                        <h3 class="font-size-30">{{critics[0].newspaper}}</h3>
                                     </div>
                                     <div class="vote">
                                         <i class="fas fa-star" v-for="i in critics[0].vote"></i>
