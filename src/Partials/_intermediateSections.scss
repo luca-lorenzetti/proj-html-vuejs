@@ -1,24 +1,25 @@
 .inter_sec_section{
     color:  $textColorMain;
     flex: 1;
-
     & > *{
-        height: 70vh;
+        height: 90vh;
     }
 
 
     & > .left_inter_sec_section{
         flex: 1;
         background-position: 50% 10%;
+        flex-basis: 60%
     }
 
 
     & > .right_inter_sec_section{
         padding: 100px;
-        padding-right: 150px;
+        padding-right: 180px;
         flex: 1;
         background-color: $mainBgColor;
         align-items: flex-start;
+        flex-basis: 40%;
 
         & > *:not(p:nth-child(1)){
            margin-left: 130px;
@@ -30,15 +31,18 @@
             & > span{
                 margin-right: 75px;
                 width: 60px;
-                border-bottom: 1px solid #fff;
+                border-bottom: 1px solid $textColorMain;
             }
         }
         & > p:nth-child(3){
             overflow-wrap: break-word;
                 color: $textColorThird;
                 font-family: Helvetica Neue;
-                letter-spacing: 3px;
-                line-height: 30px;
+                line-height: 26px;
+        }
+
+         small{
+            letter-spacing: 4px;
         }
       
     }

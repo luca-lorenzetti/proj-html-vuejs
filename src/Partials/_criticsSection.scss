@@ -14,19 +14,24 @@
         -ms-transition: all .4s ease-in-out;
         -o-transition: all .4s ease-in-out;
       
+        .author{
+            font-family: 'Antonio', sans-serif;
+            letter-spacing: 2px;
+        }
          i{
             margin: 0 5px;
         }
          hr{
             width: 60px;
+            opacity: 0.7;
         }
          > .critic_content{
             line-height: 22px;
             font-family: Helvetica Neue;
-            padding-right: 30px;
+            padding-right: 50px;
 
              > p{
-                margin-top: 20px;
+                // margin-top: 20px;
             }
         } 
     }
@@ -74,6 +79,7 @@
 
      > .main_card:hover{
          > .right_card{
+             cursor: pointer;
             transform: scale(1.04);
             -webkit-transform: scale(1.04);
             -moz-transform: scale(1.04);
@@ -87,7 +93,7 @@
         height: 65vh;
         
          > *{
-            padding: 50px 60px;
+            padding: 90px;
             height: 100%;
             background-position: center 30%;
             box-shadow: inset 0 200px 300px 80px rgba(0, 0, 0, 1);
@@ -95,6 +101,7 @@
         }
 
         > *:hover{
+                cursor: pointer;
                 transform: scale(1.04);
                 -webkit-transform: scale(1.04);
                 -moz-transform: scale(1.04);

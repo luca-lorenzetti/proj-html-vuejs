@@ -1,7 +1,7 @@
 .menus_section{
     margin-top: 150px;
     justify-content: center;
-    padding: 50px 150px;
+    padding: 50px 100px;
     margin: 100px auto;
     width : $widthMenusSec;
 
@@ -11,7 +11,6 @@
 
         & > *{
             margin: 20px 30px;
-            
         }
         
         & > .dish > p{
@@ -24,6 +23,10 @@
             align-items: center;
             padding-right: 30px;
             margin: 10px 0;
+
+            > small{
+                margin-left: 10px;
+            }
         }
     }
 

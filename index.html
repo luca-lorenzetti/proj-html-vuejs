@@ -11,15 +11,22 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Libre+Baskerville:ital@1&family=Petit+Formal+Script&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 
-        <!-- Font Roboto tmp -->
+        <!-- 1° Font Main -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
+        <!-- 2° Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap" rel="stylesheet">
+        
         <!-- VueJs -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 
         <!-- Font-awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <link rel="icon" href="src/img/favicon/favicon.ico">
+
 
         <!-- Main style -->
         <link rel="stylesheet" href="dist/app.css">
@@ -74,7 +81,7 @@
 
                             <p class="flex"> <span></span><small class="font-size-14 text_light text_uppercase">{{header.subtitle}}</small></p>
                             <div class="title_header_left">
-                                <h2>{{header.title}}</h2>
+                                <h2 class="font-size-70">{{header.title}}</h2>
                             </div>
                             <p class="font-size-20 text_light description">{{header.content}}
                             </p>
@@ -97,7 +104,7 @@
                             feugiat in nam in feugiat. Ipsum odio etiam duis
                             facilisis amet vulputate.
                             </p>
-                            <h2 class="font-size-40">food is our common ground, a universal experience.</h2>
+                            <h2 class="font-size-44">food is our common ground, a universal experience.</h2>
                             <p>Tristique tempus condimentum diam donec. Condimentum ullamcorper sit elementum hendreit mi
                                 nulla in consequat, ut.Metus, nullam scelerisque netus viverra dui.
                             </p>
@@ -178,7 +185,6 @@
 
 
                     <!-- Critics section -->
-
                         <div id="critics" class="critics_section flex flex_colum">
                             <div class="title_section">
                                 <h2 class="font-size-30">What critics are saying about us</h2>
@@ -244,12 +250,11 @@
                             </div>
 
                         </div>
-
                     <!-- /Critics section -->
 
                     <!-- 4th section -->
                     <div class="s4th_section flex bgImg-full-cover">
-                        <p class="font-size-16 text_uppercase">california rolls - $22</p>
+                        <p class="font-size-14 text_uppercase">kung pao chicken - $32</p>
                     </div>
                     <!-- 4th section -->
 
@@ -342,7 +347,7 @@
                     <p>Lorem ipsum dolor si saepe perspiciatis eum repudiandae, dolores doloremque. Sequi a vitae, un iciatis nulla!</p>
                     
                     <ul class="social_list flex">
-                        <li class="flex" v-for="social in socials"><a href="#" class="font-size-18"><i :class="social.iconPath"></i></a></li>
+                        <li class="flex" v-for="social in socials"><a href="#" class="font-size-20"><i :class="social.iconPath"></i></a></li>
                     </ul>
                 </div>
                 

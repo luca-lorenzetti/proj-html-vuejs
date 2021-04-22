@@ -21,10 +21,12 @@ ul{
 
 h2,h3{
     text-transform: uppercase;
+    font-family: 'Antonio', sans-serif;
 }
 h2{
     font-size: 60px;
     overflow-wrap: break-word;
+    // font-family: 'Antonio', sans-serif;
 }
 // Fonts size
 
@@ -56,9 +58,10 @@ strong{
 
 .title_section{
     & >h2{
-        margin-top: 150px;
+        margin-top: 100px;
         margin-bottom: 25px;
         font-weight: 100;
+        font-style: normal;
         font-family: 'EB Garamond', serif;
         font-family: 'Libre Baskerville', serif;
     }
