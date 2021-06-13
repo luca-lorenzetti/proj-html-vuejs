@@ -323,7 +323,7 @@ header > .header_content > .right_inter_sec_section > p {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   flex-direction: column;
-  background-color: #5C3D27;
+  background-color: #000;
   flex: 1;
   justify-content: flex-start;
   height: 100%;
@@ -358,7 +358,7 @@ header > .header_content > .right_inter_sec_section > p {
   padding: 90px;
   height: 100%;
   background-position: center 30%;
-  box-shadow: inset 0 200px 300px 80px #5C3D27;
+  box-shadow: inset 0 200px 300px 80px #000;
   flex: 1;
 }
 .critics_section > .secondary_cards > *:hover {
@@ -430,7 +430,7 @@ header > .header_content > .right_inter_sec_section > p {
 }
 .news_section .card:hover > .bg_article {
   height: 100%;
-  box-shadow: inset 0 400px 100px -7px #5C3D27;
+  box-shadow: inset 0 400px 100px -7px #000;
 }
 .news_section .card:hover > .bg_article > * {
   display: inline-block;
@@ -455,7 +455,7 @@ header > .header_content > .right_inter_sec_section > p {
   padding: 100px;
   padding-right: 180px;
   flex: 1;
-  background-color: #5C3D27;
+  background-color: #000;
   align-items: flex-start;
   flex-basis: 40%;
 }
@@ -523,7 +523,7 @@ header > .header_content > .right_inter_sec_section > p {
   background-size: cover;
   color: #fff;
   transform: translateY(-50px);
-  background-color: #5C3D27;
+  background-color: #000;
   -webkit-transform: translateY(-50px);
   -moz-transform: translateY(-50px);
   -ms-transform: translateY(-50px);
@@ -542,7 +542,7 @@ header > .header_content > .right_inter_sec_section > p {
   justify-content: flex-start;
 }
 .dish_day_section > .dish_card {
-  background-color: #5C3D27;
+  background-color: #000;
   color: #fff;
   margin-top: 40px;
   margin-left: 15%;
