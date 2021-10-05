@@ -233,7 +233,8 @@
             vote: 5
           }
         ],
-        dishOfDay:{}
+        dishOfDay:{},
+        dropDown: false,
     },
     methods: {
 

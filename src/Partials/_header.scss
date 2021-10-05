@@ -2,7 +2,7 @@ header {
 
     width: $widthHeader;
     height: $heightHeader;
-
+    position: relative;
     // Top header
     &>.top_header {
         position: absolute;
@@ -43,6 +43,36 @@ header {
                 }
             }
         }
+
+        .hamburger_menu{
+            color: $textColorMain;
+            height: 100%;
+            width: 100%;
+
+            .dropdown_content{
+                height: 100vh;
+                background-color: $mainBgColor;
+                box-shadow: 0 0 20px rgba(0,0,0, 1);
+
+
+                position: absolute;
+                left: 0;
+                width: 100%;
+                padding: 50px 0;
+
+                .nav_bar_dropdown{
+                    flex-direction: column;
+                    text-align: center;
+
+                        li{
+
+                            margin: 10px 0;
+
+                        }
+                }
+            }
+
+        }
     }
 
     > .header_content{
@@ -75,3 +105,14 @@ header {
 
 
 
+.slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+  }

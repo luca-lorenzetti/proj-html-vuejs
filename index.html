@@ -63,6 +63,25 @@
                             </a></li>
                         </ul>
 
+                        <!-- Hamburger Menu -->
+                        <div class="hamburger_menu">
+                            <a href="#" @click="dropDown = !dropDown"><i class="fas fa-bars font-size-28"></i></a>
+
+                            <transition name="slide-fade">
+                                <div v-if="dropDown" class="dropdown_content">
+                                    <ul class="nav_bar_dropdown flex">
+                                        <li v-for="item in navbar" >
+                                                <a :href="'#' + item.nameItem" @click="removeActiveFromMenuHeader(),item.active = !item.active" :class="{'active_menu_item' : item.active}">{{item.nameItem}}
+                                                <small class="new text_bold font-size-12" v-show="item.new">New</small>
+                                                <i v-if="item.icon" :class="item.pathIcon"></i> 
+                                        
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </transition>
+                            
+                        </div>
+                        <!-- Hamburger Menu -->
                     </div>
                     <!-- /Right top header -->
 

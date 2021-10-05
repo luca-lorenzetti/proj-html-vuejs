@@ -1,0 +1,18 @@
+@media screen and(max-width: 992px){
+    .nav_bar_menu_header{
+        display: none;
+    } 
+
+    .hamburger_menu{
+        display: block;
+    }
+}
+
+@media screen and(min-width: 992px){
+
+
+    .hamburger_menu{
+        display: none;
+    }
+}
+
